@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+/* GLOBAL */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+/* HEADER */
+
+
+
+header {
+    background-color: #4F5D75;
+}
+
+.header-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.search-box {
+    border: none;
+    border-radius: 5px;
+    padding: 7.5px 10px;
+    width: 250px;
+}
+
+.search-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 7.5px 10px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: lightgrey;
+}
+
+.img-container img {
+    /* size of the logo */
+    width: 230px;
+}
+
+.account-div {
+    display: flex;
+    align-items: center;
+}
+
+.account-div .login-btn,
+.account-div .signup-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #EF8354;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 7.5px 25px;
+    cursor: pointer;
+}
+
+.account-div .profile {
+    margin-left: 20px;
+}
+
+.account-div .login-btn:hover,
+.account-div .signup-btn:hover {
+    background-color: chocolate;
+}
+
+
+
+/* FOOTER */
+
+
+
+footer {
+    /* color of the footer */
+    background-color: #4F5D75;
+    display: flex;
+    justify-content: center;
+    /* size of the footer */
+    padding: 50px 75px;
+    color: white;
+}

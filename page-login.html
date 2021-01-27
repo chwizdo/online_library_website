@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style-global.css">
+    <link rel="stylesheet" href="./style/style-form.css">
+    <link rel="stylesheet" href="./images/Icon/flaticon.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="header-container">
+            <div class="img-container">
+                <a href="./index.php"><img src="./images/Bookplace WDT logo.png" alt="Bookplace Logo"></a>
+            </div>
+            <div class="search-container">
+                <form action="./page-search.php" method="POST">
+                    <input type="text" placeholder="Search.." name="search" class="search-box">
+                    <input type="submit" value="Search" class="search-btn">
+                </form>
+            </div>
+            <div class="account-div">
+                <a href="./page-login.html" class="login-btn"><div>Log in</div></a>
+                <a href="./page-signup.html" class="signup-btn"><div>Sign Up</div></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Form -->
+
+    
+    <section class="body-container">
+        <div class="form-container">
+            <div class="form-title">
+                <h2>Login</h2>
+                <a href="./index.php" class="flaticon-cancel"></a>
+            </div>
+            <div class="form-content">
+                <form action="./Function/login.php" method="POST">
+                    <p>E-mail:</p>
+                    <input type="email" name="email" required>
+                    <p>Password:</p>
+                    <input type="password" name="password" required>
+                    <div class="submit">
+                        <input type="submit" name="login" value="Log In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

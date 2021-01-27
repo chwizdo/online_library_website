@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+/* ENTIRE BODY */
+
+
+
+.body {
+    background-color: #E5ECF3;
+}
+
+.body-container {
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-direction: column ;
+    align-items: center;
+   
+}
+
+
+/* MAIN SECTION */
+
+
+
+.main-section {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.recomendation {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.recomendation h2 {
+    color: white;
+    padding: 75px;
+    font-size: 50px;
+    background-image: url(./images/Hero-Section/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cat-title {
+    width: 100%;
+    padding: 40px 0;
+    font-size: 28px;
+}
+
+.book-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+}
+
+.book-container {
+    width: 23%;
+}
+
+.book-container h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.book-container a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.book-img {
+    width: 100%;
+    height: 85%;
+    background-color: white;
+}
+
+.book-img:hover{
+    transform: scale(1.05,1.05);
+}
+
+
+/*newly added middle section & white background by yun*/
+
+.centre-main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.white-box {
+    background-color:#909090;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* book content */
+
+.main {
+    background-color:#ffffff;
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.main h2{
+    padding: 10px 0px;
+}
+
+.book-cover{
+        width: 200px;
+        height: 300px;
+        background-color: black;
+        margin: 10px;
+}
+
+.book-cover-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.book-cover-main{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.book-cover{
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    margin: 10px;
+}
+.book-details{
+    margin: 10px 30px;
+    width: 100%;
+}
+
+.book-details h2{
+    font: 18px;
+}
+
+.book-details h5{
+    margin-bottom: 15px;
+}
+.book-details p{
+    margin: 5px 0px;
+}
+
+.book-details h3{
+    padding-top: 5px;
+}
+
+.book-details a{
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.like{
+    text-align: center;
+    height: 20px;
+    width:20px;
+}
+
+.dislike{
+    text-align: center;
+    height: 20px;
+    width:20px;
+
+}
+
+
+
+.like-dislike{
+    margin: 8px 0px;
+}
+
+.icon-container{
+    height: 20px;
+    width:20px;
+
+}
+
+
+a.like::before{
+
+    content: url('images/like.png');
+    padding: 10px 5px 5px 10px ;
+    height:30px;
+    width:30px;
+    }
+    
+ a.dislike::before{
+    
+    content: url('images/dislike.png');
+    padding: 10px 5px 5px 10px ;
+    height:30px;
+    width:30px;
+    }
+    
+    a.like::before{
+
+    content: url('images/like.png');
+    padding: 10px 5px 5px 10px ;
+    height:30px;
+    width:30px;
+    }
+    
+
+
+ a.like:hover{
+    background-color: #c9f5d4;
+    transform: scale(1.05,1.05);
+    
+    }
+    
+ a.dislike:hover{
+    background-color: #f5c9c9;
+    transform: scale(1.05,1.05);
+   
+   }
+
+
+ textarea{
+        height:80px;
+        width:100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+.bookdetails-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #EF8354;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 7.5px 25px;
+    text-align: center;
+   
+}
+
+.submitreview-btn {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #EF8354;
+    border-radius: 5px;
+    padding: 7.5px 35px;
+    text-align: center;
+    border: none;
+    outline:none;
+}
+
+.bookdetails-btn:hover, .submitreview-btn:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+/* HIDE RADIO */
+#radio{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+ 
+#radio + img {
+    
+    cursor: pointer;
+    }
+
+/* CHECKED STYLES */
+#radio:checked + img {
+    transform: scale(1.4,1.4);
+    }
+
+#radio:hover  + img {
+    transform: scale(1.4,1.4);
+    box-shadow: #fff;
+   
+}
+
+label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 10px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.reveal-if-active {
+  float: right;
+  opacity: 0;
+  max-height: 0;
+  max-width: 0px;
+  overflow-x: visible;
+  ;
+}
+  
+#radio:checked + img ~ .reveal-if-active {
+    
+    float: right;
+    opacity: 1;
+    max-height: 20px;
+    max-width:300px;
+    overflow: hideen;
+    padding: 15px;
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+/* Global */
+
+
+
+body {
+    background-color: #E5ECF3;
+}
+
+
+
+/* ENTIRE BODY */
+
+
+
+.body-container {
+    display: flex;
+    height: 550px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.form-title h2 {
+    font-weight: 400;
+}
+
+.form-title a {
+    text-decoration: none;
+    color: rgba(79, 93, 117, 1);
+}
+
+.form-title a:hover {
+    color: rgb(46, 53, 65);
+}
+
+.form-content {
+    background-color: rgb(181, 188, 197);
+    padding: 25px;
+}
+
+.form-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.form-content input{
+    font-size: 20px;
+    padding: 5px 7.5px;
+    width: 95%;
+    margin-top: 5px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 0;
+}
+
+.submit input {
+    width: 40%;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: rgb(239, 131, 84);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.submit input:hover {
+    background-color: chocolate;
+}
+
+.submit input[disabled] {
+    cursor: not-allowed;
+}
+

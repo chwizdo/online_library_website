@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+/* ENTIRE BODY */
+
+
+
+.body {
+    background-color: #E5ECF3;
+}
+
+.body-container {
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-direction: column ;
+    align-items: center;
+   
+}
+
+
+
+
+/*newly added middle section & white background by yun*/
+
+.centre-main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.white-box {
+    background-color:#909090;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* book content */
+
+.main {
+    background-color:#ffffff;
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.main h2{
+    padding: 10px 0px;
+}
+
+.book-cover{
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+}
+
+.book-cover-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.book-cover-main{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.book-cover{
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.book-details{
+    margin: 10px 30px;
+    width: 100%;
+}
+
+.book-details h5{
+    margin-bottom: 15px;
+}
+
+.book-details h6{
+    margin: 15px 0px;
+    font-size: medium;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: normal;
+}
+.book-details p{
+    margin: 5px 0px;
+}
+
+.book-details h3{
+    padding-top: 5px;
+}
+
+.book-details a{
+    padding-top: 5px;
+    text-align: center;
+    
+}
+
+.readnow-btn, .addtofav-btn, .ratethisbook-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #EF8354;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 7.5px 25px;
+    text-align: center;
+}
+
+.readnow-btn:hover, .addtofav-btn:hover, .ratethisbook-btn:hover {
+    background-color: chocolate;
+}
+
+a.like::before{
+
+    content: url('images/like.png');
+    padding: 10px 5px 5px 1px ;
+    height:30px;
+    width:30px;
+    position:relative
+    }
+    
+ a.dislike::before{
+    
+    content: url('images/dislike.png');
+    padding: 10px 5px 5px 1px ;
+    height:30px;
+    width:30px;
+    position:relative
+    }
+
+.like-dislike a{
+    display: inline;
+    vertical-align: middle;
+}
+
+.icon{
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+
+
+
